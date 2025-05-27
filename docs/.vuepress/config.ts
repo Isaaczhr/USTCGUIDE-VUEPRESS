@@ -10,7 +10,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'logo.svg' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
   ],
 
   bundler: viteBundler(),
