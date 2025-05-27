@@ -7,9 +7,10 @@ import { defineClientConfig } from 'vuepress/client'
 // import CustomComponent from './theme/components/Custom.vue'
 
 import './theme/styles/custom.css'
+import { setupRedirectTrailingSlash } from './scripts/router-hook/redirect-trailing-slash'
 
 export default defineClientConfig({
-  enhance({ app }) {
+  enhance({ app, router }) {
     // built-in components
     // app.component('RepoCard', RepoCard)
     // app.component('NpmBadge', NpmBadge)
@@ -18,5 +19,6 @@ export default defineClientConfig({
 
     // your custom components
     // app.component('CustomComponent', CustomComponent)
+    setupRedirectTrailingSlash(router)
   },
 })
