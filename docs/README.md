@@ -14,7 +14,11 @@ config:
         - 
           theme: brand
           text: 入学指南 →
-          link: /admission/
+          link: /admission/9x3fdksd/
+        - 
+          theme: brand
+          text: 课程资料簿 →
+          link: /coursedata/ov2b0mrr/
         -
           theme: alt
           text: 关于 USTCGUIDE →
