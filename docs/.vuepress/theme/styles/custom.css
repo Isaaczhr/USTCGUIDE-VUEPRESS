@@ -1,50 +1,93 @@
 :root {
-  /** 主题颜色 */
 
-  /*
-  --vp-c-brand-1: #5086a1;
-  --vp-c-brand-2: #6aa1b7;
-  --vp-c-brand-3: #8cccd5;
-  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
-  */
+  /**
+   * 主题色
+   * -------------------------------------------------------------------------- */
 
-  /** 背景颜色 */
+  --vp-c-brand-1: rgb(52, 109, 184);               /* 链接颜色、强调色 */
+  --vp-c-brand-2: rgb(81, 127, 186);              /* 链接、按钮 hover 颜色 */
+  --vp-c-brand-3: rgb(130, 155, 188);             /* 背景色、边框色 */
+  --vp-c-brand-soft: rgba(135, 162, 198, 0.314);      /* 辅助色 */
 
-  /*
-  --vp-c-bg: #fff;
-  --vp-c-bg-alt: #f6f6f7;
-  --vp-c-bg-elv: #fff;
-  --vp-c-bg-soft: #f6f6f7;
-  */
+  /**
+   * 文本颜色
+   * -------------------------------------------------------------------------- */
 
-  /** 文本颜色 */
+  --vp-c-text-1: rgb(27, 27, 29);                    /* 主要文本 */
+  --vp-c-text-2: rgba(27, 27, 29, 0.78);              /* 次要文本 */
+  --vp-c-text-3: rgba(27, 27, 29, 0.56);              /* 辅助文本 */
 
-  /*
-  --vp-c-text-1: rgba(60, 60, 67);
-  --vp-c-text-2: rgba(60, 60, 67, 0.78);
-  --vp-c-text-3: rgba(60, 60, 67, 0.56);
-  */
+  /**
+   * 背景色
+   * -------------------------------------------------------------------------- */
+
+  --vp-c-bg: #fff;                                    /* 主体背景 */
+  --vp-nav-bg-color: #fff;                            /* 导航栏背景 */
+  --vp-nav-screen-bg-color: #fff;                     /* 移动端导航栏 */
+  --vp-local-nav-bg-color: #fff;                      /* 页面内导航栏 */
+  --vp-sidebar-bg-color: #f6f6f7;                     /* 侧边栏背景 */
+  --vp-code-block-bg: #f6f8fa;                        /* 代码块背景 */
 }
 
-/** 深色模式 */
 [data-theme="dark"] {
-  /*
-  --vp-c-brand-1: #8cccd5;
-  --vp-c-brand-2: #6aa1b7;
-  --vp-c-brand-3: #5086a1;
-  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
-  */
 
-  /*
-  --vp-c-bg: #1b1b1f;
-  --vp-c-bg-alt: #161618;
-  --vp-c-bg-elv: #202127;
-  --vp-c-bg-soft: #202127;
-  */
+  /**
+   * 主题色
+   * -------------------------------------------------------------------------- */
 
-  /*
-  --vp-c-text-1: rgba(255, 255, 245, 0.86);
-  --vp-c-text-2: rgba(235, 235, 245, 0.6);
-  --vp-c-text-3: rgba(235, 235, 245, 0.38);
-  */
+  --vp-c-brand-1: rgb(130, 155, 188);             /* 链接颜色、强调色 */
+  --vp-c-brand-2: rgb(81, 127, 186);              /* 链接、按钮 hover 颜色 */
+  --vp-c-brand-3: rgb(52, 109, 184);               /* 背景色、边框色 */
+  --vp-c-brand-soft: rgba(135, 162, 198, 0.314);      /* 辅助色 */
+
+  /**
+   * 文本颜色
+   * -------------------------------------------------------------------------- */
+
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);           /* 主要文本 */
+  --vp-c-text-2: rgba(235, 235, 245, 0.6);            /* 次要文本 */
+  --vp-c-text-3: rgba(235, 235, 245, 0.38);           /* 辅助文本 */
+
+  /**
+   * 背景色
+   * -------------------------------------------------------------------------- */
+
+  --vp-c-bg: #1b1b1f;                                 /* 主体背景 */
+  --vp-nav-bg-color: #1b1b1f;                         /* 导航栏背景 */
+  --vp-nav-screen-bg-color: #1b1b1f;                  /* 移动端导航栏 */
+  --vp-local-nav-bg-color: #1b1b1f;                   /* 页面内导航栏 */
+  --vp-sidebar-bg-color: #161618;                     /* 侧边栏背景 */
+  --vp-code-block-bg: #202127;                        /* 代码块背景 */
+}
+
+h1.vp-doc-title.page-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h2 a span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 a span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding-left: 1em;
+  border-radius: 0%;
+  color: var(--vp-c-text-3);
+  margin: 1em 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vp-doc blockquote::before {
+  visibility: hidden;
+}
+
+.vp-doc blockquote p {
+  margin: 0.5em 0;
 }
