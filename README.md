@@ -10,7 +10,3 @@
 
 提交的 Markdown 文件原则上应该满足 markdownlint 规范（美观、便于操作）。
 可以通过 **使用 Typora 编辑器** 或 **使用 VSCode 中的 markdownlint 拓展** 来保证满足标准。
-
-## 说明
-
-目前项目挂载在 Vervel 下构建并运行，将来计划转到国内服务器运营。敬请期待。

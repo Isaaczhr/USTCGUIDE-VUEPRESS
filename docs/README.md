@@ -8,8 +8,8 @@ config:
     background: tint-plate
     hero:
       name: USTC GUIDE
-      tagline: 不知道写什么！
-      text: 不知道写什么！
+      # tagline: 不知道写什么！
+      text: 祝你成为一个自洽的USTCer
       actions:
         - 
           theme: brand
@@ -21,7 +21,7 @@ config:
           link: /coursedata/ov2b0mrr/
         -
           theme: alt
-          text: 关于 USTCGUIDE →
+          text: 关于 USTC GUIDE →
           link: /about/
         # -
         #   theme: alt
