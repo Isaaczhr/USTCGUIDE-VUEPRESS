@@ -1,0 +1,14 @@
+---
+url: /coursedata/dz1am76t/index.md
+---
+## 教材与习题集
+
+*
+
+## 试卷与答案
+
+*
+
+## 笔记与其他
+
+* [量子力学B课程资料【刘丰铨、宋冰睿】](https://easylink.cc/f9fr0z)

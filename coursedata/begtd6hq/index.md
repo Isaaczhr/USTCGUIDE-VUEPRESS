@@ -1,0 +1,10 @@
+---
+url: /coursedata/begtd6hq/index.md
+---
+## 教材
+
+* [无机与分析化学实验讲义【中科大化学与材料科学学院化学实验教学中心】](https://easylink.cc/mqlhqk)
+
+## 笔记与其他
+
+* [滴定曲线数据处理方法](https://easylink.cc/v81i76)
