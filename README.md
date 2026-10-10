@@ -22,3 +22,9 @@
 - `docs/survive/`：USTC生存手册。
 
 集合配置位于 `docs/.vuepress/collections/`，由 `config.ts` 引入。各集合使用自动侧边栏，文章的 `permalink` 保持不变；新增集合使用 `defineCollection` 定义，并加入 `defineCollections` 列表。
+
+## Markdown 导出与页面操作
+
+生产构建会生成 `/llms.txt`、`/llms-full.txt` 和各文章对应的 Markdown 文件。文章标题旁的菜单支持复制正文、查看 Markdown，以及在 ChatGPT、Claude、Perplexity 中提问。
+
+此功能需要通过 `npm run docs:build` 和 `npm run docs:preview` 验证，开发服务器不生成导出文件。空白占位页不显示菜单，也不导出 Markdown。需要排除某篇文章时，可在其 frontmatter 中设置 `llmstxt: false`。

@@ -9,6 +9,11 @@ export default defineUserConfig({
   title: 'USTC GUIDE',
   description: 'USTC GUIDE',
 
+  extendsPage(page) {
+    // 空白占位页没有 Markdown 导出文件，不显示页面操作菜单
+    if (!page.contentRendered.trim()) page.frontmatter.llmstxt = false
+  },
+
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', href: '/logo.svg' }],
@@ -34,6 +39,18 @@ export default defineUserConfig({
 
     /* 文档集合，仅使用 doc 类型 */
     collections,
+
+    /**
+     * 导出 llms.txt、llms-full.txt 和各页面的 Markdown
+     * @see https://theme-plume.vuejs.press/guide/features/llmstxt/
+     */
+    llmstxt: {
+      llmsTxtTemplate: '# {title}\n\n{description}\n\n## 目录\n\n{toc}',
+      llmsTxtTemplateGetter: {
+        title: 'USTC GUIDE',
+        description: '面向中国科学技术大学学生的入学指南、课程资料簿与生存手册。',
+      },
+    },
 
     /**
      * 编译缓存，加快编译速度
